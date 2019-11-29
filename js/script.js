@@ -28,7 +28,7 @@ function validateForm(){
   var males = ["Akufo", "Ayuko", ""]
   var females = ["Ayud", "Yaa", "Star"]
 
-  
+  var days = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)
 
 }
 

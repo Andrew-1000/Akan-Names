@@ -71,8 +71,11 @@ body {
 }
 .p-font-title {
   font-family: 'Amaranth', sans-serif;
-  
-  font-size: 30px;
+  font-size: 50px;
+}
+.font-head {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 20px;
 }
 [tabindex="-1"]:focus {
   outline: 0 !important;

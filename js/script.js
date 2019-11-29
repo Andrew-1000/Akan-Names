@@ -1,3 +1,14 @@
+//Validating inputs 
+
+function formValidation(){
+  var cent = document.forms["akamGender"]["century"].value;
+  var year = document.forms["akamGender"]["year"].value;
+
+}
+
+
+
+
 //Initializing days of the week with an array of 7 items
 day = new makeArray(7);
 day[0] = "Sunday";

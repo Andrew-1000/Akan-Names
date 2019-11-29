@@ -19,18 +19,27 @@ function validateForm(){
   } else if (day == "" || day <=0 || day > 31) {
     alert ("Day is wrong: Enter a number between 0 and 32");
     return false;
-  } else if (gender == "") {
-    alert ("Please select gender");
-  } else {
-    alert ("You have made it")
-  }
+  } 
 
   var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   
   var days = parseInt(( ( (cent/4) -2*cent-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7);
 
-  var 
+  var checkGender = document.querySelector('input[name="gender"]: checked').value;
+
+  if (checkGender=== 1){
+    if (days === 0){
+      alert("Sunday was your day of birth");
+      alert( males[0] + "Is your name");
+    } else if (day === 1) {
+      alert("You were born on Monday");
+      alert("Your name is" + males[1]);
+    } else if (day === 2) {
+      alert("Tuesday is when you were born");
+      alert("You are" + males[2]);
+    }
+  }
 
 }
 

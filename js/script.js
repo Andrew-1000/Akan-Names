@@ -11,7 +11,7 @@ function validateForm(){
     alert("Century Digit Must be between 18 and 21 ");
     return false;
   } else if ( year == "" || year < 1900 || year >2019) {
-    alert("Year provided is wrong: Sorry you dont exist");
+    alert("Year provided is wrong: It should be between 1890-2020");
     return false;
   } else if (month == "" || month <= 0 || month >12) {
     alert ("Month is wrong: Enter value between 0 and 13");
@@ -25,10 +25,12 @@ function validateForm(){
     alert ("You have made it")
   }
 
-  var males = ["Akufo", "Ayuko", ""]
-  var females = ["Ayud", "Yaa", "Star"]
+  var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  
+  var days = parseInt(( ( (cent/4) -2*cent-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7);
 
-  var days = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)
+  var 
 
 }
 

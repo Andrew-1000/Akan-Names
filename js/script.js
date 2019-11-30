@@ -1,13 +1,17 @@
 //Creation of function that will get the Akan names
 function validateForm() {
+
 //Array list for the male and female genders
   var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+
 //JavaScript getting data provided in a form.
   var cent = parseInt(document.getElementById("cent").value);
   var year = parseInt(document.getElementById("year").value);
   var month = parseInt(document.getElementById("month").value);
   var day = parseInt(document.getElementById("day").value);
+
 
 //If statement to check for values provided by the user
   if (cent == "" || cent < 19 || cent >20) {
@@ -28,10 +32,14 @@ function validateForm() {
     return false;
   } 
   
+
   //Formula for getting the Exact Day with regards to the century, year, month and date
   var days = parseInt( ( (cent/4) -2*cent-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
+  
+  
   // JavaScript code for picking the gender that has been selected
   var gender = document.querySelector('input[name="gender"]:checked').value;
+
 
   //With regards to the persons gender and day, a name will be given to the Male
   if (gender == 1) {

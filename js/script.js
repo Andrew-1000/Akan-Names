@@ -14,12 +14,16 @@ function validateForm() {
 
 
 //If statement to check for values provided by the user
-  if (cent == "" || cent < 19 || cent >20) {
-    alert ("First two digits must be between 18 and 21");
+if (cent == "" || cent < 19 || cent >21) {
+    alert ("Century must be between 18 and 22");
     return false;
   }
   if (year == "" || year < 0 || year >=100 ) {
     alert ("Year value should be between 0 and 99");
+    return false;
+  }
+  if (cent == 21 && year > 19){
+    alert ("We're not yet there");
     return false;
   }
   

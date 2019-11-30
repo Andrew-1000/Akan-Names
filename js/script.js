@@ -9,7 +9,15 @@ function validateForm() {
   var day = parseInt(document.getElementById("day").value);
   
     
-
+  if (cent == "" || cent < 19 || cent >20) {
+    alert ("First two digits must be between 18 and 21");
+    return false;
+  }
+  if (year == "" || year < 0 || year >=100 ) {
+    alert ("Year value should be between 0 and 99");
+    return false;
+  }
+  
   if (month == "" || month <= 0 || month >12) {
     alert ("Month is wrong: Enter value between 0 and 13");
     return false;
@@ -20,7 +28,7 @@ function validateForm() {
   } 
   
   
-  var days = parseInt(cent / 4 - 2 * cent - 1 + (5 * year) / 4 + (26 * (month + 1)) / 10 + day) % 7;
+  var days = parseInt( ( (cent/4) -2*cent-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
 
   var gender = document.querySelector('input[name="gender"]:checked').value;
 

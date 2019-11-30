@@ -35,7 +35,6 @@ if (cent == "" || cent < 19 || cent >21) {
     alert ("Day is wrong: Enter a number between 0 and 32");
     return false;
   } 
-  
 
   //Formula for getting the Exact Day with regards to the century, year, month and date
   var days = parseInt( ( (cent/4) -2*cent-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
@@ -96,6 +95,4 @@ if (cent == "" || cent < 19 || cent >21) {
     } 
   }
 } 
-
-
 

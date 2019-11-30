@@ -1,14 +1,15 @@
+//Creation of function that will get the Akan names
 function validateForm() {
-  
+//Array list for the male and female genders
   var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
+//JavaScript getting data provided in a form.
   var cent = parseInt(document.getElementById("cent").value);
   var year = parseInt(document.getElementById("year").value);
   var month = parseInt(document.getElementById("month").value);
   var day = parseInt(document.getElementById("day").value);
-  
-    
+
+//If statement to check for values provided by the user
   if (cent == "" || cent < 19 || cent >20) {
     alert ("First two digits must be between 18 and 21");
     return false;
@@ -27,58 +28,59 @@ function validateForm() {
     return false;
   } 
   
-  
+  //Formula for getting the Exact Day with regards to the century, year, month and date
   var days = parseInt( ( (cent/4) -2*cent-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
-
+  // JavaScript code for picking the gender that has been selected
   var gender = document.querySelector('input[name="gender"]:checked').value;
 
+  //With regards to the persons gender and day, a name will be given to the Male
   if (gender == 1) {
     if (days === 0) {
-      alert("Sunday was your day of birth");
-      alert( "Your name should be" + females[0] );
+      alert("Sunday is when you were born");
+      alert( "Your name should be" + males[0] );
     } else if (days === 1) {
-      alert("You were born on Monday");
-      alert("Your name is" + females[1]);
+      alert("Monday is when you were born");
+      alert("Your name is" + males[1]);
     } else if (days === 2) {
       alert("Tuesday is when you were born");
-      alert("You are" + females[2]);
+      alert("You are" + males[2]);
     } else if (days === 3) {
       alert("Wednesday is when you were born");
-      alert("Your name should be: " + females[3]);
+      alert("Your name should be: " + males[3]);
     } else if (days === 4) {
       alert("Thursday is when you were born");
-      alert("Your name should be: " + females[4]);
+      alert("Your name should be: " + males[4]);
     } else if (days === 5) {
       alert("Friday is when you were born");
-      alert("Your name should be: " + females[5]);
+      alert("Your name should be: " + males[5]);
     } else if (days === 6) {
       alert("Saturday is when you were born");
-      alert("Your name should be: " + females[6]);
+      alert("Your name should be: " + males[6]);
     } else {
       alert ("Kindly try Again Later");
-    }
+    }   //If gender selected is not male it will give names to females with regards to the day obtained from the formula above
   } else {
     if (days === 0) {
-      alert ("Your were born on Sunday");
-      alert ("Your name should be: " + males[0]);
+      alert ("Sunday is when you were born");
+      alert ("Your name should be: " + females[0]);
     } else if (days === 1) {
-      alert ("You were born on Monday");
-      alert ("Your name should be: " + males[1]);
+      alert ("Monday is when you were born");
+      alert ("Your name should be: " + females[1]);
     } else if (days === 2) {
-      alert ("You were born on Tuesday");
-      alert ("Your name should be: " + males[2]);
+      alert ("Tuesday is when you were born");
+      alert ("Your name should be: " + females[2]);
     } else if (days === 3) {
-      alert ("You were born on Wednesday");
-      alert ("Your name should be: " + males[3]);
+      alert ("Wednesday is when you were born");
+      alert ("Your name should be: " + females[3]);
     } else if (days === 4) {
-      alert ("You were born on Thursday");
-      alert ("Your name should be: " + males[4]);
+      alert ("Thursday is when you were born");
+      alert ("Your name should be: " + females[4]);
     } else if (days === 5) {
-      alert ("You were born on Friday");
-      alert ("Your name should be: " + males[5]);
+      alert ("Friday is when you were born");
+      alert ("Your name should be: " + females[5]);
     } else if (days === 6) {
-      alert ("You were born on Saturday");
-      alert ("Your name should be: " + males[6]);
+      alert ("Saturday is when you were born");
+      alert ("Your name should be: " + females[6]);
     } 
   }
 } 

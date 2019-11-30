@@ -60,6 +60,8 @@ body {
   line-height: 1.5;
   background-color: #72888870;
   text-align: left;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(../images/Ghana-Flag.jpg);
 }
 .p-font {
@@ -76,6 +78,10 @@ body {
 .font-head {
   font-family: 'Philosopher', sans-serif;
   font-size: 20px;
+}
+.font-head-about {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 40px;
 }
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -1890,7 +1896,7 @@ pre code {
 
 .form-control {
   display: block;
-  width: 50%;
+  width: 75%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -2425,7 +2431,7 @@ textarea.form-control {
   font-size: 1rem;
   align-content: center;
   align-items: center;
-  margin-left: 35%;
+  margin-left: 30%;
   line-height: 3;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5129,12 +5135,16 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 0.2rem 0.1rem;
   margin-bottom: 1rem;
-  background-image: linear-gradient(90deg, red, green, yellow);
+  background-image: linear-gradient(90deg, rgba(202, 174, 174, 0.459), rgba(105, 148, 105, 0.459), rgba(172, 172, 114, 0.253));
   border-radius: 0.3rem;
   font-family: 'Berkshire Swash', cursive;
   font-size: 60px;
   color: #ffffff;
   
+}
+.pag {
+  font-family: 'Marmelad', sans-serif;
+  font-size: 20px;
 }
 
 

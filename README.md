@@ -5,7 +5,9 @@ Akan Names Creator is a website that is used to give names to Akan people with r
 The author of this website is Andrew Ambia.
 
 # Setup Information
-The website doesnt require any installation on the users PC. It is a website that has been hosted on github pages to allow users view it. It is there subject to access through a browser, preferebly Google Chrome. This <a href = "https://andrew-1000.github.io/Akan-Names">Link </a> will open the hosted website
+The website doesnt require any installation on the users PC. It is a website that has been hosted on github pages to allow users view it. It is there subject to access through a browser, preferebly Google Chrome. \
+This link will open the hosted website: https://andrew-1000.github.io/Akan-Names
+To get the code A Github Repository Link is here: https://github.com/Andrew-1000/Akan-Names.git
 
 # Technologies used
 

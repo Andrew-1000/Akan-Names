@@ -48,13 +48,13 @@ if (cent == "" || cent < 19 || cent >21) {
   if (gender == 1) {
     if (days === 0) {
       alert("Sunday is when you were born");
-      alert( "Your name should be" + males[0] );
+      alert("Your name should be: " + males[0] );
     } else if (days === 1) {
       alert("Monday is when you were born");
-      alert("Your name is " + males[1]);
+      alert("Your name should be: " + males[1]);
     } else if (days === 2) {
       alert("Tuesday is when you were born");
-      alert("You are " + males[2]);
+      alert("Your name should be: " + males[2]);
     } else if (days === 3) {
       alert("Wednesday is when you were born");
       alert("Your name should be: " + males[3]);
